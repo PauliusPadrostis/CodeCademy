@@ -23,11 +23,8 @@ class Node:
 
 
 class SinglyLinkedList:
-    def __init__(self, value=None):
-        if value is not None:
-            self.head_node = Node(value)
-        else:
-            self.head_node = None
+    def __init__(self):
+        self.head_node = None
 
     def insert_node(self, new_value):
         new_node = Node(new_value)
@@ -51,8 +48,8 @@ class SinglyLinkedList:
             current_node = current_node.get_next_node()
         return string_list
 
-    @staticmethod
-    def merge_lists(list1, list2):
+
+    def merge_lists(self, list1, list2):
         list3 = SinglyLinkedList()
 
         # Copy nodes of first list to list3
