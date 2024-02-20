@@ -5,7 +5,7 @@ class Stack:
     def __init__(self, name):
         self.size = 0
         self.top_item = None
-        self.limit = 1000
+        self.limit = 3
         self.name = name
 
     def push(self, value):
